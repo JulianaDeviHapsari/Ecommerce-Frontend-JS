@@ -1,4 +1,7 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+
+/* eslint-disable @typescript-eslint/no-explicit-any */
+declare const process: any;
+// nuxt.config.ts
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
@@ -11,52 +14,39 @@ export default defineNuxtConfig({
     "@nuxt/image",
   ],
 
-  app: {
-    head: {
-      link: [
-        {
-          rel: "preconnect",
-          href: "https://fonts.googleapis.com",
-        },
-        {
-          rel: "preconnect",
-          href: "https://fonts.gstatic.com",
-          crossorigin: "",
-        },
-        {
-          href: "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap",
-          rel: "stylesheet",
-        },
-      ],
-    },
-  },
-
   runtimeConfig: {
     public: {
       clientIdGoogleSignIn: "",
-      baseUrl: process.env.NUXT_BASE_URL || "http://localhost:3000",
+      baseUrl: "", // nanti diisi otomatis dari env
     },
   },
 
   routeRules: {
-    "/server/**": { proxy: `${process.env.NUXT_BASE_URL}/**` },
+    "/server/**": { proxy: "/api/**" },
     "/registration/**": { ssr: false },
     "/cart": { ssr: false },
     "/checkout/**": { ssr: false },
     "/seller/**": { ssr: false },
   },
 
+  nitro: {
+    routeRules: {
+      "/api/**": { proxy: `${process.env.NUXT_BASE_URL}/**` },
+    },
+  },
+
   image: {
-    domains: [process.env.NUXT_BASE_URL?.replace("https://", "")],
+    domains: [
+      (process.env.NUXT_BASE_URL || "")
+        .replace("https://", "")
+        .replace("http://", ""),
+    ],
   },
 
   vite: {
     build: {
       rollupOptions: {
-        // Fix error: "Cannot split a chunk that has already been edited"
-        output: {
-          manualChunks: undefined,
-        },
+        output: { manualChunks: undefined },
       },
     },
   },

@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
+
   modules: [
     "@nuxt/ui",
     "@nuxt/eslint",
@@ -9,6 +10,7 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@nuxt/image",
   ],
+
   app: {
     head: {
       link: [
@@ -28,19 +30,34 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   runtimeConfig: {
     public: {
       clientIdGoogleSignIn: "",
+      baseUrl: process.env.NUXT_BASE_URL || "http://localhost:3000",
     },
   },
+
   routeRules: {
-    "/server/**": { proxy: `${import.meta.env.NUXT_BASE_URL}/**` },
+    "/server/**": { proxy: `${process.env.NUXT_BASE_URL}/**` },
     "/registration/**": { ssr: false },
     "/cart": { ssr: false },
     "/checkout/**": { ssr: false },
     "/seller/**": { ssr: false },
   },
+
   image: {
-    domains: [import.meta.env.NUXT_BASE_URL?.replace("https://", "")],
+    domains: [process.env.NUXT_BASE_URL?.replace("https://", "")],
+  },
+
+  vite: {
+    build: {
+      rollupOptions: {
+        // Fix error: "Cannot split a chunk that has already been edited"
+        output: {
+          manualChunks: undefined,
+        },
+      },
+    },
   },
 });

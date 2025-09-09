@@ -1,6 +1,6 @@
 # E-Commerce Frontend Using JS
 
-E Commerce Frontend Using Vue, Js, and Postman in Fast Campus Course
+E Commerce Frontend Using JS, Vue, Nuxt, and Postman in Fast Campus Course
 
 ## Demo
 
@@ -12,7 +12,7 @@ E Commerce Frontend Using Vue, Js, and Postman in Fast Campus Course
 
 ## Tech Stack
 
-**Client:** Vue, Js, and Postman
+**Client:** JS, Vue, Nuxt, and Postman
 
 ## Authors
 

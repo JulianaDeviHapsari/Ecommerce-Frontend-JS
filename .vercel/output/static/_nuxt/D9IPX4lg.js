@@ -1,0 +1,1 @@
+import{a as c}from"./B4TYcooI.js";import{f as i}from"./C__g2RLv.js";function d(t,r={}){const{returnObject:n=!1}=r,e=new Date,a=(t||"").includes("-")?Number(t.split("-")[1]):Number(t)||0,o=c(e,a),s=c(e,a+2);return n?{start:o,end:s}:`${i(o,"d")} - ${i(s,"d MMM")}`}function m(t){const e=new Date(t)-new Date;return Math.floor(e/1e3)}export{m as a,d as g};

@@ -1,0 +1,1 @@
+import{u as i}from"./CCYVfaL6.js";import{r as m}from"./BVdw5vJQ.js";function f(t,o){const e=m(),{execute:u,...r}=i(t,{method:"POST",immediate:!1,watch:!1,body:e,...o});function s(a){return e.value=a,u()}return{...r,execute:s}}export{f as u};

@@ -1,0 +1,4 @@
+const InputQuantity_vue_vue_type_style_index_0_scoped_4d188ab2_lang = ".input-quantity[data-v-4d188ab2]{border-width:1px;display:flex}.input-quantity[data-v-4d188ab2]>:not([hidden])~:not([hidden]){--tw-divide-x-reverse:0;border-left-width:calc(1px*(1 - var(--tw-divide-x-reverse)));border-right-width:calc(1px*var(--tw-divide-x-reverse))}.input-quantity[data-v-4d188ab2] input{height:100%;text-align:center;width:3.5rem}.input-quantity[data-v-4d188ab2] input::-webkit-inner-spin-button,.input-quantity[data-v-4d188ab2] input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.input-quantity[data-v-4d188ab2] input[type=number]{-moz-appearance:textfield}";
+
+export { InputQuantity_vue_vue_type_style_index_0_scoped_4d188ab2_lang as I };
+//# sourceMappingURL=InputQuantity-styles-1.mjs-DjlGV1tK.mjs.map

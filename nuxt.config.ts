@@ -1,6 +1,6 @@
-
 /* eslint-disable @typescript-eslint/no-explicit-any */
 declare const process: any;
+
 // nuxt.config.ts
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
@@ -17,7 +17,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       clientIdGoogleSignIn: "",
-      baseUrl: "", // nanti diisi otomatis dari env
+      baseUrl: "", // diisi otomatis dari env di Vercel
     },
   },
 
@@ -30,6 +30,7 @@ export default defineNuxtConfig({
   },
 
   nitro: {
+    preset: "vercel", // ✅ output khusus untuk vercel
     routeRules: {
       "/api/**": { proxy: `${process.env.NUXT_BASE_URL}/**` },
     },
@@ -44,9 +45,14 @@ export default defineNuxtConfig({
   },
 
   vite: {
+    optimizeDeps: {
+      exclude: ["@headlessui/vue"], // ✅ cegah error build
+    },
     build: {
       rollupOptions: {
-        output: { manualChunks: undefined },
+        output: {
+          manualChunks: undefined, // ✅ cegah split ulang chunk
+        },
       },
     },
   },

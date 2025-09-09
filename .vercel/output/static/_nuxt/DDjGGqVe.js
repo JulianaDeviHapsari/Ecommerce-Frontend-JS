@@ -1,0 +1,1 @@
+import{_ as n}from"./j9dIvsdS.js";import{_ as t,c as s,o as _,b as c,a}from"./BVdw5vJQ.js";const r={},p={class:"flex gap-2 justify-center py-6"};function i(m,o){const e=n;return _(),s("div",p,[c(e,{class:"w-6 text-primary"}),o[0]||(o[0]=a("p",null,"Loading...",-1))])}const l=t(r,[["render",i]]);export{l as _};

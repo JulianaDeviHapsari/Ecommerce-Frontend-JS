@@ -22,7 +22,7 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    "/server/**": { proxy: "/api/**" },
+    // "/server/**": { proxy: "/api/**" },
     "/registration/**": { ssr: false },
     "/cart": { ssr: false },
     "/checkout/**": { ssr: false },
@@ -30,10 +30,10 @@ export default defineNuxtConfig({
   },
 
   nitro: {
-    preset: "vercel", // ✅ output khusus untuk vercel
-    routeRules: {
-      "/api/**": { proxy: `${process.env.NUXT_BASE_URL}/**` },
-    },
+    preset: "vercel-static", // ✅ output khusus untuk vercel
+    // routeRules: {
+  //     "/api/**": { proxy: `${process.env.NUXT_BASE_URL}/**` },
+  //   },
   },
 
   image: {

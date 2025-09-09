@@ -1,75 +1,15 @@
-# Nuxt 3 Minimal Starter
+# E-Commerce Backend Golang
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+E-Commerce Backend using Golang, Echo, Redis, Kafka, Postman, and Docker in Fast Campus Course
 
-## Setup
+## Screenshots
 
-Make sure to install the dependencies:
+![E-Commerce Backend Golang](https://github.com/JulianaDeviHapsari/Ecommerce-Backend-Java/blob/main/Screenshot%202025-08-01%20150706.png)
 
-```bash
-# npm
-npm install
+## Tech Stack
 
-# pnpm
-pnpm install
+**Client:** Golang, Kafka, Postman, Docker and JWT
 
-# yarn
-yarn install
+## Authors
 
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- [@Julianadevhapsari](https://github.com/JulianaDeviHapsari/)

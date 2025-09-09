@@ -4,7 +4,7 @@ E Commerce Frontend Using Vue, Js, and Postman in Fast Campus Course
 
 ## Demo
 
-[Syopo]([https://disney-plus-clone-46783.web.app](https://ecommerce-frontend-68jr0bmit-juliana-devi-hapsaris-projects.vercel.app/))
+[Syopo](https://ecommerce-frontend-68jr0bmit-juliana-devi-hapsaris-projects.vercel.app/)
 
 ## Screenshots
 

@@ -1,14 +1,18 @@
-# E-Commerce Backend Golang
+# E-Commerce Frontend Using JS
 
-E-Commerce Backend using Golang, Echo, Redis, Kafka, Postman, and Docker in Fast Campus Course
+E Commerce Frontend Using Vue, Js, and Postman in Fast Campus Course
+
+## Demo
+
+[Syopo]([https://disney-plus-clone-46783.web.app](https://ecommerce-frontend-68jr0bmit-juliana-devi-hapsaris-projects.vercel.app/))
 
 ## Screenshots
 
-![E-Commerce Backend Golang](https://github.com/JulianaDeviHapsari/Ecommerce-Backend-Java/blob/main/Screenshot%202025-08-01%20150706.png)
+![E-Commerce Frontend Using JS](https://github.com/JulianaDeviHapsari/Ecommerce-Backend-Java/blob/main/Screenshot%202025-08-01%20150706.png)
 
 ## Tech Stack
 
-**Client:** Golang, Kafka, Postman, Docker and JWT
+**Client:** Vue, Js, and Postman
 
 ## Authors
 

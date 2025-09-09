@@ -8,7 +8,7 @@ E Commerce Frontend Using Vue, Js, and Postman in Fast Campus Course
 
 ## Screenshots
 
-![E-Commerce Frontend Using JS](https://github.com/JulianaDeviHapsari/Ecommerce-Backend-Java/blob/main/Screenshot%202025-08-01%20150706.png)
+![E-Commerce Frontend Using JS](https://github.com/JulianaDeviHapsari/Ecommerce-Frontend-JS/blob/main/Screenshot%202025-09-09%20155044.png)
 
 ## Tech Stack
 

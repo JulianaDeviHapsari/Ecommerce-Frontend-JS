@@ -4,16 +4,15 @@ export default defineNuxtPlugin(async () => {
 
   if (token.value) {
     try {
-      const response = await $fetch("/server/api/profile", {
-        headers: {
-          Authorization: `Bearer ${token.value}`,
-        },
-      });
+      // ✅ Dummy profile tanpa API
+      const dummyProfile = {
+        id: 1,
+        name: "Demo User",
+        email: "demo@example.com",
+      };
 
-      if (response.data) {
-        session.token = token.value;
-        session.profile = response.data;
-      }
+      session.token = token.value;
+      session.profile = dummyProfile;
     } catch {
       session.token = "";
       token.value = undefined;

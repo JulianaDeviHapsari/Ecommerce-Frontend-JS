@@ -63,68 +63,68 @@
 </template>
 
 <script setup>
-// Data manual Carousel
+// Data Carousel (Unsplash)
 const items = [
-  "https://picsum.photos/1920/1080?random=1",
-  "https://picsum.photos/1920/1080?random=2",
-  "https://picsum.photos/1920/1080?random=3",
-];
+  "https://images.unsplash.com/photo-1503602642458-232111445657?w=1200",
+  "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200",
+  "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200",
+]
 
-// Data manual Kategori
+// Data Kategori (Unsplash)
 const categories = [
-  { slug: "elektronik", name: "Elektronik", icon: "https://picsum.photos/200/200?random=5" },
-  { slug: "fashion", name: "Fashion", icon: "https://picsum.photos/200/200?random=12" },
-  { slug: "olahraga", name: "Olahraga", icon: "https://picsum.photos/200/200?random=13" },
-  { slug: "mainan", name: "Mainan", icon: "https://picsum.photos/200/200?random=14" },
-  { slug: "otomotif", name: "Otomotif", icon: "https://picsum.photos/200/200?random=15" },
-  { slug: "perabot", name: "Perabot", icon: "https://picsum.photos/200/200?random=16" },
-];
+  { slug: "elektronik", name: "Elektronik", icon: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=300" },
+  { slug: "fashion", name: "Fashion", icon: "https://images.unsplash.com/photo-1521335629791-ce4aec67dd47?w=300" },
+  { slug: "olahraga", name: "Olahraga", icon: "https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?w=300" },
+  { slug: "mainan", name: "Mainan", icon: "https://images.unsplash.com/photo-1617814079897-4f3db2a3da6d?w=300" },
+  { slug: "otomotif", name: "Otomotif", icon: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=300" },
+  { slug: "perabot", name: "Perabot", icon: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=300" },
+]
 
-// Data manual Produk
+// Data Produk (Unsplash)
 const products = [
   {
     slug: "sepatu-1",
     name: "Sepatu Kasual Slingback Mules",
     price: 100000,
     discount: 10,
-    image: "https://picsum.photos/400/400?random=21",
+    image: "https://images.unsplash.com/photo-1528701800489-20be9c6e62a3?w=400",
   },
   {
     slug: "tas-1",
     name: "Tas Selempang Kulit Premium",
     price: 250000,
     discount: 0,
-    image: "https://picsum.photos/400/400?random=22",
+    image: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400",
   },
   {
     slug: "laptop-1",
     name: "Laptop Gaming XYZ",
     price: 7500000,
     discount: 5,
-    image: "https://picsum.photos/400/400?random=23",
+    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400",
   },
   {
     slug: "baju-1",
     name: "Kaos Polos Premium",
     price: 80000,
     discount: 0,
-    image: "https://picsum.photos/400/400?random=24",
+    image: "https://images.unsplash.com/photo-1521335629791-ce4aec67dd47?w=400",
   },
   {
     slug: "bola-1",
     name: "Bola Sepak Original",
     price: 150000,
     discount: 15,
-    image: "https://picsum.photos/400/400?random=25",
+    image: "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=400",
   },
   {
-    slug: "bola-1",
-    name: "Bola Sepak Original",
-    price: 150000,
-    discount: 15,
-    image: "https://picsum.photos/400/400?random=26",
+    slug: "kamera-1",
+    name: "Kamera DSLR Pro",
+    price: 4500000,
+    discount: 20,
+    image: "https://images.unsplash.com/photo-1519183071298-a2962be90b8e?w=400",
   },
-];
+]
 </script>
 
 <style scoped>

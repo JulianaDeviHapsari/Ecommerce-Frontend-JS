@@ -1,103 +1,56 @@
 <template>
   <div>
-    <h3>Learning: Data Fetching</h3>
-    <div class="grid grid-cols-2">
+    <h3>Learning: Data Fetching (Dummy)</h3>
+    <div class="grid grid-cols-2 gap-4">
       <div>
-        <UButton color="white" @click="execute">GET DATA</UButton>
+        <UButton color="white" @click="getData">GET DATA</UButton>
         <UButton @click="refresh">Refresh DATA</UButton>
-        <p v-if="status === 'pending'">Loading...</p>
+        <p v-if="loading">Loading...</p>
         <pre>{{ data }}</pre>
       </div>
       <div>
         <UInput v-model="productName" />
         <UButton @click="handleAddProduct">Add</UButton>
         <p>{{ statusAdd }}</p>
-        <!-- <p>{{ loading ? "Loading..." : "" }}</p> -->
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-definePageMeta({
-  middleware: ["learning-data-fetching"],
-});
 const productName = ref("");
-// const data = ref("");
-// const loading = ref(true);
+const data = ref([]);
+const loading = ref(false);
+const statusAdd = ref("");
 
-// onMounted(() => {
-//   fetch("https://dummyjson.com/products")
-//     .then((res) => res.json())
-//     .then((res) => {
-//       data.value = res;
-//     })
-//     .finally(() => (loading.value = false));
-// });
+// ✅ Dummy data awal
+const dummyProducts = [
+  { id: 1, title: "Produk A" },
+  { id: 2, title: "Produk B" },
+];
 
-// function getProduct() {
-//   return fetch("https://dummyjson.com/products").then((res) => res.json());
-// }
+function getData() {
+  loading.value = true;
+  setTimeout(() => {
+    data.value = dummyProducts;
+    loading.value = false;
+  }, 500); // simulasi delay
+}
 
-// const { data, status, error, execute } = useAsyncData("product", getProduct, {
-//     immediate: false
-// });
+function refresh() {
+  getData();
+}
 
-// const { data, status, execute, refresh } = useFetch(
-//   "https://dummyjson.com/products",
-//   {
-//     key: 'product-list',
-//     // immediate: false,
-//     params: { limit: 10, skip: 10 },
-//   }
-// );
-
-// function refresh() {
-//     refreshNuxtData('product')
-// }
-
-// const { status: statusAdd } = useApi("https://dummyjson.com/products/add", {
-//     method: "POST",
-//     body: computed(() => ({
-//       title: productName.value
-//     })),
-//     watch: false,
-    
-//   })
-
-const { data, status, execute, refresh } = useApi(
-  "https://dummyjson.com/products"
-);
-
-const {execute: addProduct, status: statusAdd} = useSubmit('https://dummyjson.com/products/add')
-// const loading = ref(false);
-// const dataAdd = ref()
 function handleAddProduct() {
-  // const formData = new FormData()
-  // formData.append('title', productName.value)
-  const newData = {
+  if (!productName.value) return;
+  const newProduct = {
+    id: dummyProducts.length + 1,
     title: productName.value,
   };
-
-  addProduct(newData)
-  // loading.value = true;
-  // const { status: statusAdd } = useApi("https://dummyjson.com/products/add", {
-  //   method: "POST",
-  //   body: newData,
-  //   watch: false,
-  //   onResponse({ response }) {
-  //     loading.value = false;
-  //   },
-  // });
-
-  // const response = $fetch("https://dummyjson.com/products/add", {
-  //   method: "POST",
-  //   body: newData,
-  //   headers: {},
-  //   onResponse() {
-  //     loading.value = false;
-  //   },
-  // });
+  dummyProducts.push(newProduct);
+  data.value = [...dummyProducts];
+  statusAdd.value = "Produk berhasil ditambahkan (dummy)";
+  productName.value = "";
 }
 </script>
 

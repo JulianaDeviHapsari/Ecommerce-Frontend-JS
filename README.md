@@ -8,7 +8,7 @@ E Commerce Frontend Using JS, Vue, Nuxt, and Postman in Fast Campus Course.
 
 ## Screenshots
 
-![E-commerce Frontend ScreenShot](https://github.com/JulianaDeviHapsari/Ecommerce-Frontend-JS/blob/main/Screenshot%202025-09-09%20155044.)
+![E-commerce Frontend ScreenShot](https://github.com/JulianaDeviHapsari/Ecommerce-Frontend-JS/blob/1723fe8/Screenshot%202025-09-09%20155044.png)
 
 ## Tech Stack
 

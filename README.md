@@ -1,75 +1,20 @@
-# Nuxt 3 Minimal Starter
+# E Commerce Backend
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+E Commerce Frontend Using JS, Vue, Nuxt, and Postman in Fast Campus Course.
 
-## Setup
+## Demo
 
-Make sure to install the dependencies:
+[E Commerce Frontend](https://ecommerce-frontend-js.onrender.com)
 
-```bash
-# npm
-npm install
+## Screenshots
 
-# pnpm
-pnpm install
+![E-commerce Frontend ScreenShot](https://github.com/JulianaDeviHapsari/Ecommerce-Frontend-JS/blob/main/Screenshot%202025-09-09%20155044.)
 
-# yarn
-yarn install
+## Tech Stack
 
-# bun
-bun install
-```
+**Client:** JS, Vue, Nuxt, and Postman
 
-## Development Server
+## Authors
 
-Start the development server on `http://localhost:3000`:
+- [@Julianadevhapsari](https://github.com/JulianaDeviHapsari/)
 
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

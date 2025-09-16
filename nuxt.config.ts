@@ -30,7 +30,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      clientIdGoogleSignIn: "",
+      clientIdGoogleSignIn: import.meta.env.NUXT_PUBLIC_CLIENT_ID_GOOGLE_SIGN_IN || "494772501610-6uq7maqbf3c8rd4h46ci89d3ir6bqv0h.apps.googleusercontent.com",
     },
   },
   routeRules: {

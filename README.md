@@ -1,4 +1,4 @@
-# E Commerce Backend
+# E Commerce Frontend
 
 E Commerce Frontend Using JS, Vue, Nuxt, and Postman in Fast Campus Course.
 
